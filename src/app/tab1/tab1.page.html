@@ -1,13 +1,7 @@
 <ion-content>
   <ion-slides pager="true" [options]="slideOpts" id='slider'>
-    <ion-slide>
-      <h1>Slide 1</h1>
-    </ion-slide>
-    <ion-slide>
-      <h1>Slide 2</h1>
-    </ion-slide>
-    <ion-slide>
-      <h1>Slide 3</h1>
+    <ion-slide *ngFor='let item of banners'>
+      <img [src]="item.url" alt="">
     </ion-slide>
   </ion-slides>
 </ion-content>
